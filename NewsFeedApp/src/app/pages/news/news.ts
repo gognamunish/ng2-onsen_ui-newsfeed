@@ -20,7 +20,7 @@ export class NewsPage implements OnInit {
   articles : Object;
   selectedNewsSource ;
 
-  constructor(private _newsAPIService : NewsAPIService, private _navigator :OnsNavigator, private _params: Params) {
+  constructor(private _newsAPIService : NewsAPIService, private _navigator :OnsNavigator, private _params: Params ) {
      console.log ("Initializing cosntructor");
      this.selectedNewsSource = this._params.data;
         let paramValue = this._params.data;
@@ -34,6 +34,8 @@ export class NewsPage implements OnInit {
 
  ngOnInit() : void{
  }
+
+
 
 reload (){
   console.log ("Reload" + this.type);

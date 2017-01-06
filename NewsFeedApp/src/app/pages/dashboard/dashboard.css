@@ -4,3 +4,8 @@
   width: 100%;
   transition: background 0.4s;
 }
+
+.top {
+  position: fixed;
+  top: 44px;
+}
