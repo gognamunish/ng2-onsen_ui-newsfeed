@@ -14,6 +14,8 @@ import {NewsAPIService} from './app/services/newsapi';
 import {DashboardPage} from './app/pages/dashboard/dashboard';
 import {NewsPage} from './app/pages/news/news';
 
+import {SourceNewsFilterPipe} from './app/pages/dashboard/sourcefilter.pipe'
+
 
 
 
@@ -31,7 +33,8 @@ if (process.env.NODE_ENV === 'production') {
     declarations: [
         NewsFeedApplication,
         DashboardPage,
-        NewsPage
+        NewsPage,
+        SourceNewsFilterPipe
     ],
     bootstrap: [
         NewsFeedApplication,

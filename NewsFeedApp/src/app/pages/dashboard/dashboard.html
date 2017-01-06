@@ -1,22 +1,26 @@
-
+<ons-toolbar>
+    <div class="center">My News My Way...</div>
+    <div class="left">
+      <ons-toolbar-button (click) ="alert();">
+        <ons-icon icon="md-menu"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+  
 <div class="content">
-    
-    <ons-list modifier="inset" >
-    <ons-list-header>Select News Source</ons-list-header>
-    
-    <ons-list-item modifier="longdivider" *ngFor="let source of sources" (click) ="push(source);">
-
-        <div class="left">
-             <img class="list__item__thumbnail" src="{{source.urlsToLogos.small}}">
-        </div>
-        <div class="center">
-          <span class="list__item__title">{{source.name}}</span><span class="list__item__subtitle">{{source.description}}</span>
-        </div>
-
-    </ons-list-item>
+  <br/>
+  <br/>
+<ons-input class="clearable" placeholder="&#160;Start typing to filter" type="text"  #newSource (keyup)="0" ></ons-input>  
    
-  </ons-list>
+  <ons-row class="center" >
+  <ons-col width="50%" *ngFor="let source of sources | sourceNewsFilter : newSource.value" (click) ="push(source);">
+    <img  src="{{source.urlsToLogos.small}}" style="padding:20px" width="100px" height="60px">
+   
+  </ons-col>
+  
+</ons-row>
 
+   
 
   
   </div>

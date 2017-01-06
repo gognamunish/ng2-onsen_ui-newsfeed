@@ -1,1 +1,6 @@
 /* Dashboard CSS */
+.clearable{
+  border: 1px solid #999;
+  width: 100%;
+  transition: background 0.4s;
+}

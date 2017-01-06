@@ -2,9 +2,10 @@ import { Component, ViewChild} from '@angular/core';
 
 import {NewsAPIService} from '../../services/newsapi';
 import {NewsSource} from '../../newssource';
-import {OnsNavigator} from 'angular2-onsenui';
+import {OnsNavigator, onsNotification} from 'angular2-onsenui';
 
 import {NewsPage} from '../news/news';
+import {SourceNewsFilterPipe} from './sourcefilter.pipe';
 
 @Component({
   selector: 'dashboard',
@@ -15,7 +16,9 @@ import {NewsPage} from '../news/news';
 
 export class DashboardPage {
   
-  sources : Object;
+
+  terms: string = "";
+  sources : any;
 
  
   constructor(_newsAPIService : NewsAPIService, private _navigator : OnsNavigator) {
@@ -29,6 +32,12 @@ export class DashboardPage {
 
    
   }
+
+   alert() {
+    onsNotification.alert('Trial Version 1.0');
+  }
+  
+
 
    push(source) {
     console.log ("Selected News Source: "+ source );

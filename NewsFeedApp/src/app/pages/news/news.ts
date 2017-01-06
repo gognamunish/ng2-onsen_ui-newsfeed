@@ -15,7 +15,7 @@ import {DashboardPage} from '../dashboard/dashboard';
 
 export class NewsPage implements OnInit {
   
-  type : string= 'Latest';
+  type : string= 'Showing  Top Articles';
   loaded : boolean = false;
   articles : Object;
   selectedNewsSource ;
@@ -34,6 +34,10 @@ export class NewsPage implements OnInit {
 
  ngOnInit() : void{
  }
+
+reload (){
+  console.log ("Reload" + this.type);
+}
   
  
 

@@ -2,28 +2,23 @@
     <div class="left"><ons-back-button>Back</ons-back-button></div>
     <div class="center">{{selectedNewsSource.source.name}}</div>
   </ons-toolbar>
-  <div class="page__background">
-
-{{selectedNewsSource.source.urlsToLogos.medium}}
-
-  </div>
-
-
+  
 
   <div class="page__content" *ngIf="loaded">
+
+    Current Top News ...
    
-    Showing Top Articles...
+    <ons-list-item modifier="material" *ngFor="let article of articles">
 
-    <ons-list-item modifier="longdivider" *ngFor="let article of articles">
-
-        <div class="left">
-             <img height="100px" width="100px" src="{{article.urlToImage}}">
+        <div class="right">
+             <img class="" height="70px" width="70px" src="{{article.urlToImage}}">
         </div>
-        <div class="center">
+        <div class="center" >
           <span class="list__item__title">{{article.title}}</span>
           <span class="list__item__subtitle">{{article.description}}</span>
-          <div><span class="list__item__subtitle"><i> Author: {{article.author}}, Published at: {{article.publishedAt}}</i> </span></div>
+          <div><span class="list__item__subtitle"><i> Published at: {{article.publishedAt}}</i> </span></div>
         </div>
+       
         
 
     </ons-list-item>
