@@ -1,0 +1,202 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'https://github.com/phonegap/ios-deploy' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData https://github.com/phonegap/ios-deploy
+8 silly fetchOtherPackageData https://github.com/phonegap/ios-deploy
+9 silly cache add args [ 'https://github.com/phonegap/ios-deploy', null ]
+10 verbose cache add spec https://github.com/phonegap/ios-deploy
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://github.com/phonegap/ios-deploy',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://github.com/phonegap/ios-deploy',
+11 silly cache add   spec: 'git+https://github.com/phonegap/ios-deploy.git',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:phonegap/ios-deploy.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/phonegap/ios-deploy.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/phonegap/ios-deploy.git',
+11 silly cache add      gitUrl: 'git://github.com/phonegap/ios-deploy.git',
+11 silly cache add      shortcut: 'github:phonegap/ios-deploy',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/phonegap/ios-deploy/master/package.json' } }
+12 verbose addRemoteGit caching https://github.com/phonegap/ios-deploy
+13 verbose addRemoteGit git+https://github.com/phonegap/ios-deploy.git is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/phonegap/ios-deploy.git via git+https://github.com/phonegap/ios-deploy.git
+15 verbose tryClone git-https-github-com-phonegap-ios-deploy-git-639b58b2 not in flight; caching
+16 verbose correctMkdir /Users/farziyogi/.npm/_git-remotes correctMkdir not in flight; initializing
+17 verbose makeDirectory /Users/farziyogi/.npm/_git-remotes creation not in flight; initializing
+18 silly makeDirectory /Users/farziyogi/.npm/_git-remotes uid: 501 gid: 20
+19 info git [ 'clone',
+19 info git   '--template=/Users/farziyogi/.npm/_git-remotes/_templates',
+19 info git   '--mirror',
+19 info git   'https://github.com/phonegap/ios-deploy.git',
+19 info git   '/Users/farziyogi/.npm/_git-remotes/git-https-github-com-phonegap-ios-deploy-git-639b58b2' ]
+20 verbose mirrorRemote git+https://github.com/phonegap/ios-deploy.git git clone https://github.com/phonegap/ios-deploy.git
+21 verbose correctMkdir /Users/farziyogi/.npm/_git-remotes correctMkdir not in flight; initializing
+22 verbose setPermissions git+https://github.com/phonegap/ios-deploy.git set permissions on /Users/farziyogi/.npm/_git-remotes/git-https-github-com-phonegap-ios-deploy-git-639b58b2
+23 verbose resolveHead git+https://github.com/phonegap/ios-deploy.git original treeish: master
+24 info git [ 'rev-list', '-n1', 'master' ]
+25 silly resolveHead git+https://github.com/phonegap/ios-deploy.git resolved treeish: 47009c2dce2d3587f405b5764a672b9ba36ed333
+26 verbose resolveHead git+https://github.com/phonegap/ios-deploy.git resolved Git URL: git+https://github.com/phonegap/ios-deploy.git#47009c2dce2d3587f405b5764a672b9ba36ed333
+27 silly resolveHead Git working directory: /tmp/npm-46171-3f9d1e44/git-cache-08e9945e/47009c2dce2d3587f405b5764a672b9ba36ed333
+28 info git [ 'clone',
+28 info git   '/Users/farziyogi/.npm/_git-remotes/git-https-github-com-phonegap-ios-deploy-git-639b58b2',
+28 info git   '/tmp/npm-46171-3f9d1e44/git-cache-08e9945e/47009c2dce2d3587f405b5764a672b9ba36ed333' ]
+29 verbose cloneResolved git+https://github.com/phonegap/ios-deploy.git clone Cloning into '/tmp/npm-46171-3f9d1e44/git-cache-08e9945e/47009c2dce2d3587f405b5764a672b9ba36ed333'...
+29 verbose cloneResolved done.
+30 info git [ 'checkout', '47009c2dce2d3587f405b5764a672b9ba36ed333' ]
+31 verbose checkoutTreeish git+https://github.com/phonegap/ios-deploy.git checkout Note: checking out '47009c2dce2d3587f405b5764a672b9ba36ed333'.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+31 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+31 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+31 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish   git checkout -b <new-branch-name>
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish HEAD is now at 47009c2... Merge pull request #261 from javierquevedo/master
+32 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+33 verbose updateSubmodules git+https://github.com/phonegap/ios-deploy.git submodule update
+34 verbose addLocalDirectory /Users/farziyogi/.npm/ios-deploy/2.0.0/package.tgz not in flight; packing
+35 verbose correctMkdir /Users/farziyogi/.npm correctMkdir not in flight; initializing
+36 verbose tar pack [ '/Users/farziyogi/.npm/ios-deploy/2.0.0/package.tgz',
+36 verbose tar pack   '/tmp/npm-46171-3f9d1e44/git-cache-08e9945e/47009c2dce2d3587f405b5764a672b9ba36ed333' ]
+37 verbose tarball /Users/farziyogi/.npm/ios-deploy/2.0.0/package.tgz
+38 verbose folder /tmp/npm-46171-3f9d1e44/git-cache-08e9945e/47009c2dce2d3587f405b5764a672b9ba36ed333
+39 verbose addLocalTarball adding from inside cache /Users/farziyogi/.npm/ios-deploy/2.0.0/package.tgz
+40 verbose correctMkdir /Users/farziyogi/.npm correctMkdir not in flight; initializing
+41 verbose addRemoteGit data._from: git+https://github.com/phonegap/ios-deploy.git
+42 verbose addRemoteGit data._resolved: git+https://github.com/phonegap/ios-deploy.git#47009c2dce2d3587f405b5764a672b9ba36ed333
+43 silly cache afterAdd ios-deploy@2.0.0
+44 verbose afterAdd /Users/farziyogi/.npm/ios-deploy/2.0.0/package/package.json not in flight; writing
+45 verbose correctMkdir /Users/farziyogi/.npm correctMkdir not in flight; initializing
+46 verbose afterAdd /Users/farziyogi/.npm/ios-deploy/2.0.0/package/package.json written
+47 silly install normalizeTree
+48 silly loadCurrentTree Finishing
+49 silly loadIdealTree Starting
+50 silly install loadIdealTree
+51 silly cloneCurrentTree Starting
+52 silly install cloneCurrentTreeToIdealTree
+53 silly cloneCurrentTree Finishing
+54 silly loadShrinkwrap Starting
+55 silly install loadShrinkwrap
+56 silly loadShrinkwrap Finishing
+57 silly loadAllDepsIntoIdealTree Starting
+58 silly install loadAllDepsIntoIdealTree
+59 silly resolveWithNewModule ios-deploy@2.0.0 checking installable status
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree lib
+63 silly idealTree lib
+63 silly idealTree └── ios-deploy@2.0.0
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 silly generateActionsToTake Finishing
+67 silly diffTrees action count 1
+68 silly diffTrees add ios-deploy@2.0.0
+69 silly decomposeActions action count 8
+70 silly decomposeActions fetch ios-deploy@2.0.0
+71 silly decomposeActions extract ios-deploy@2.0.0
+72 silly decomposeActions test ios-deploy@2.0.0
+73 silly decomposeActions preinstall ios-deploy@2.0.0
+74 silly decomposeActions build ios-deploy@2.0.0
+75 silly decomposeActions install ios-deploy@2.0.0
+76 silly decomposeActions postinstall ios-deploy@2.0.0
+77 silly decomposeActions finalize ios-deploy@2.0.0
+78 silly executeActions Starting
+79 silly install executeActions
+80 silly doSerial global-install 0
+81 silly doParallel fetch 1
+82 verbose correctMkdir /Users/farziyogi/.npm/_locks correctMkdir not in flight; initializing
+83 verbose lock using /Users/farziyogi/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+84 silly doParallel extract 1
+85 silly extract ios-deploy@2.0.0
+86 verbose unbuild lib/node_modules/.staging/ios-deploy-298c9491
+87 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491 is being purged from base /usr/local
+88 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+89 verbose tar unpack /Users/farziyogi/.npm/ios-deploy/2.0.0/package.tgz
+90 verbose tar unpacking to /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+91 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491 is being purged
+92 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm extractEntry .npmignore
+96 silly gunzTarPerm extractEntry README.md
+97 silly gunzTarPerm extractEntry LICENSE
+98 silly gunzTarPerm extractEntry .github/CONTRIBUTING.md
+99 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+100 silly gunzTarPerm extractEntry .travis.yml
+101 silly gunzTarPerm extractEntry demo/.npmignore
+102 silly gunzTarPerm extractEntry demo/Entitlements.plist
+103 silly gunzTarPerm extractEntry demo/Info.plist
+104 silly gunzTarPerm extractEntry demo/Makefile
+105 silly gunzTarPerm extractEntry demo/ResourceRules.plist
+106 silly gunzTarPerm extractEntry demo/demo.c
+107 silly gunzTarPerm extractEntry ios-deploy.xcodeproj/project.pbxproj
+108 silly gunzTarPerm extractEntry ios-deploy.xcodeproj/xcshareddata/xcschemes/ios-deploy-tests.xcscheme
+109 silly gunzTarPerm extractEntry src/ios-deploy/MobileDevice.h
+110 silly gunzTarPerm extractEntry src/ios-deploy/errors.h
+111 silly gunzTarPerm extractEntry src/ios-deploy/ios-deploy.m
+112 silly gunzTarPerm extractEntry src/ios-deploy/version.h
+113 silly gunzTarPerm extractEntry src/ios-deploy-lib/libios_deploy.h
+114 silly gunzTarPerm extractEntry src/ios-deploy-lib/libios_deploy.m
+115 silly gunzTarPerm extractEntry src/ios-deploy-tests/Info.plist
+116 silly gunzTarPerm extractEntry src/ios-deploy-tests/ios_deploy_tests.m
+117 silly gunzTarPerm extractEntry src/scripts/check_reqs.js
+118 silly gunzTarPerm extractEntry src/scripts/lldb.py
+119 silly gentlyRm /usr/local/lib/node_modules/.staging/ios-deploy-298c9491/node_modules is being purged
+120 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/ios-deploy-298c9491/node_modules
+121 silly doParallel preinstall 1
+122 silly preinstall ios-deploy@2.0.0 /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+123 info lifecycle ios-deploy@2.0.0~preinstall: ios-deploy@2.0.0
+124 warn lifecycle ios-deploy@2.0.0~preinstall: cannot run in wd %s %s (wd=%s) ios-deploy@2.0.0 ./src/scripts/check_reqs.js && xcodebuild /usr/local/lib/node_modules/.staging/ios-deploy-298c9491
+125 silly doReverseSerial remove 0
+126 silly doSerial move 0
+127 silly doSerial finalize 1
+128 silly finalize /usr/local/lib/node_modules/ios-deploy
+129 silly doSerial build 1
+130 silly build ios-deploy@2.0.0
+131 info linkStuff ios-deploy@2.0.0
+132 silly linkStuff ios-deploy@2.0.0 has /usr/local/lib/node_modules as its parent node_modules
+133 silly linkStuff ios-deploy@2.0.0 is part of a global install
+134 silly linkStuff ios-deploy@2.0.0 is installed into a global node_modules
+135 silly linkStuff ios-deploy@2.0.0 is installed into the top-level global node_modules
+136 verbose linkBins ios-deploy@2.0.0
+137 verbose link bins [ { 'ios-deploy': './build/Release/ios-deploy' },
+137 verbose link bins   '/usr/local/bin',
+137 verbose link bins   true ]
+138 verbose linkMans ios-deploy@2.0.0
+139 verbose unlock done using /Users/farziyogi/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+140 silly rollbackFailedOptional Starting
+141 silly rollbackFailedOptional Finishing
+142 silly runTopLevelLifecycles Starting
+143 silly runTopLevelLifecycles Finishing
+144 silly install printInstalled
+145 verbose stack Error: ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+145 verbose stack     at Error (native)
+146 verbose cwd /Users/farziyogi/Documents/workspace/ng2-onsen_ui-newsfeed/NewsFeedApp
+147 error Darwin 16.3.0
+148 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "https://github.com/phonegap/ios-deploy"
+149 error node v6.6.0
+150 error npm  v3.10.3
+151 error path /usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy
+152 error code ENOENT
+153 error errno -2
+154 error syscall chmod
+155 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+156 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/ios-deploy/build/Release/ios-deploy'
+156 error enoent This is most likely not a problem with npm itself
+156 error enoent and is related to npm not being able to find a file.
+157 verbose exit [ -2, true ]
