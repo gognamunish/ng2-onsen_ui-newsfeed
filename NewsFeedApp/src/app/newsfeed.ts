@@ -6,10 +6,10 @@ import {Component} from '@angular/core';
   template: require('./newsfeed.html'),
   styles: [require('./newsfeed.css')]
 })
+
 export class NewsFeedApplication {
   
-  constructor() {
-    
+  constructor() {  
   }
 
   

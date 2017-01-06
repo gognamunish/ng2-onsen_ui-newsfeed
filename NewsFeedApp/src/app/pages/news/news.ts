@@ -21,7 +21,6 @@ export class NewsPage implements OnInit {
   selectedNewsSource ;
 
   constructor(private _newsAPIService : NewsAPIService, private _navigator :OnsNavigator, private _params: Params ) {
-     console.log ("Initializing cosntructor");
      this.selectedNewsSource = this._params.data;
         let paramValue = this._params.data;
         this.articles = this._newsAPIService.getArticles(this.selectedNewsSource.source.id,'top').subscribe (res => {
@@ -35,15 +34,8 @@ export class NewsPage implements OnInit {
  ngOnInit() : void{
  }
 
-
-
 reload (){
   console.log ("Reload" + this.type);
 }
-  
- 
-
-   
- 
 
 }

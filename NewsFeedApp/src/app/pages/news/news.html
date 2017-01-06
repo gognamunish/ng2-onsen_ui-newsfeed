@@ -5,11 +5,8 @@
   
 
   <div class="page__content" *ngIf="loaded">
-
-    Current Top News ...
-   
+  Current Top News ...
     <ons-list-item modifier="material" *ngFor="let article of articles">
-
         <div class="right">
              <img class="" height="70px" width="70px" src="{{article.urlToImage}}">
         </div>
@@ -18,8 +15,5 @@
           <span class="list__item__subtitle">{{article.description}}</span>
           <div><span class="list__item__subtitle"><i> Published at: {{article.publishedAt}}</i> </span></div>
         </div>
-       
-        
-
     </ons-list-item>
   </div>

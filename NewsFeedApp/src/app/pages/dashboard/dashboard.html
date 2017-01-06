@@ -10,20 +10,13 @@
 <div class="content">
   <br/>
   <br/>
-<ons-input class="clearable" placeholder="&#160;Start typing to filter" type="text"  #newSource (keyup)="0" ></ons-input>  
-   
+  <ons-input class="clearable" placeholder="&#160;Start typing to filter" type="text"  #newSource (keyup)="0" ></ons-input>  
   <ons-row class="center" >
-  <ons-col width="50%" *ngFor="let source of sources | sourceNewsFilter : newSource.value" (click) ="push(source);">
-    <img  src="{{source.urlsToLogos.small}}" style="padding:20px" width="100px" height="60px">
-   
-  </ons-col>
-  
-</ons-row>
-
-   
-
-  
-  </div>
+    <ons-col width="50%" *ngFor="let source of sources | sourceNewsFilter : newSource.value" (click) ="push(source);">
+      <img  src="{{source.urlsToLogos.small}}" style="padding:20px" width="100px" height="60px">
+    </ons-col>
+  </ons-row>
+</div>
  
 
 

@@ -16,34 +16,24 @@ import {SourceNewsFilterPipe} from './sourcefilter.pipe';
 
 export class DashboardPage {
   
-
-  terms: string = "";
   sources : any;
 
- 
   constructor(_newsAPIService : NewsAPIService, private _navigator : OnsNavigator) {
    _newsAPIService.getSources().subscribe (res =>{
         this.sources = res.sources;
     });
-   
   }
 
   ngOnInit() {
-
-   
   }
 
-   alert() {
+  alert() {
     onsNotification.alert('Trial Version 1.0');
   }
   
-
-
    push(source) {
     console.log ("Selected News Source: "+ source );
     this._navigator.element.pushPage(NewsPage,  {data: {"source": source}});
   }
-
- 
 
 }
